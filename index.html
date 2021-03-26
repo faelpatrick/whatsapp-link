@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Patrick | Gerador de Link WhatsApp</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="principal">
+        <h1 id="titulo">Rafael Patrick</h1>
+        <h2 id="subtitulo">Gerador de link para contato por WhatsApp</h2>
+        <div id="container">
+            <div id="info">
+                <h2>COMO FUNCIONA?</h2>
+                <h3>
+                    <ul>
+                        <li>
+                            Insira o nº do WhatsApp...
+                        </li>
+                        <li> Escreva a mensagem padrão que será enviada ao número... </li>
+                        <li>Clique em “Gerar link” copie e cole a "URL Final" no botão ou link na sua página, email,
+                            etc.
+                        </li>
+                    </ul>
+                </h3>
+            </div>
+            <div id="form">
+                <label for="num">Número do WhatsApp:</label>
+                <input required type="text" id="num" name="num" placeholder="+55 (31) 9 9999-9999" maxlength="20"
+                    onkeyup="phoneMask(event)">
+                <label for="msg">Mensagem pré digitada:</label>
+                <textarea name="msg" id="msg" placeholder="Mensagem de introdução"></textarea>
+
+                <input type="button" name="gerar" value="Gerar Link" onclick="montaLink()">
+
+                <textarea id="linkGerado" name="linkGerado"></textarea>
+                <input type="button" name="copy" value="Copiar Link" onclick="copy()">
+
+
+            </div>
+        </div>
+        <creditos>&copy;Desenvolvido por <a href="www.rafaelpatrick.com.br" target="_blank">Rafael Patrick</a></creditos>
+
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="mask.js"></script>
+
+</body>
+
+</html>
