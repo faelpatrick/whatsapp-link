@@ -1,0 +1,118 @@
+body {
+    background: url(imagens/bg.jpg);
+    background-position: center;
+}
+
+#principal {
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#titulo {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 25px;
+}
+
+#subtitulo {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 20px auto;
+    color: #1ebea5;
+    font-weight: 900;
+    text-shadow: -2px 2px 9px black;
+}
+
+div#container {
+    margin: auto;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    box-shadow: 0 0 16px 6px rgb(0 0 0 / 60%);
+}
+
+div#info, div#form {
+    height: 500px;
+    padding: 40px 30px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+div#info {
+    background: linear-gradient(179deg, #1ebea5 0%, #85EB85 100%);
+    color: white;
+    line-height: 1.2;
+    font-size: 1.5em;
+    text-align: justify;
+    box-sizing: border-box;
+    text-shadow: 0 0 2px #0000002e;
+}
+
+#info h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+li {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+div#form {
+    background: white;
+    font-size: 1.4em;
+}
+
+input {
+    display: list-item;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    height: 40px;
+    text-align: center;
+    width: 90%;
+    border: none;
+    border-bottom: solid 1px;
+}
+
+input[type="button"] {
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 70px;
+    max-width: 90%;
+    background: #36c0a0;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+input[type="button"]:hover {
+    background: chartreuse;
+}
+
+textarea {
+    width: 300px;
+    margin-top: 20px;
+    width: 90%;
+    border: none;
+    border-bottom: solid 1px;
+}
+
+creditos {
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+creditos a {
+    text-decoration: none;
+    color: white;
+}
