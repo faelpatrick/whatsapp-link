@@ -1,6 +1,8 @@
 body {
-    background: url(imagens/bg.jpg);
+   background: linear-gradient(179deg, #1ebea5 0%, #85EB85 100%);
     background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 #principal {
@@ -27,9 +29,12 @@ body {
 div#container {
     margin: auto;
     position: relative;
-    width: 50%;
+    max-width: 80%;
+    border-radius: 26px;
+  overflow: hidden;
     text-align: center;
-    margin-top: 40px;
+    font-size: 1rem;
+    margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -60,6 +65,16 @@ div#info {
     padding-bottom: 15px;
 }
 
+ul {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
 li {
     margin-top: 20px;
     font-size: 0.8em;
@@ -67,7 +82,7 @@ li {
 
 div#form {
     background: white;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 input {
@@ -110,6 +125,7 @@ creditos {
     text-align: center;
     margin: auto;
     color: white;
+    padding: 20px;
 }
 
 creditos a {
